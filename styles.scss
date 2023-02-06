@@ -1,14 +1,14 @@
+@import "vars";
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
-
 body {
-  background-color: hsl(30deg, 38%, 92%);
+  background-color: $Cream;
   font-family: "Montserrat", sans-serif;
 }
-
 .container {
   height: 100vh;
   display: flex;
@@ -16,30 +16,25 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .container-card {
   display: flex;
   flex-direction: row;
   height: 450px;
   width: 600px;
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: $White;
   border-radius: 10px;
   padding: 0;
   margin: 0;
 }
-
 .image-mobile {
   display: none;
 }
-
 .container-image img {
   height: 450px;
-  -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-
 .container-info {
   display: flex;
   flex-direction: column;
@@ -47,46 +42,39 @@ body {
   justify-content: space-around;
   align-items: stretch;
 }
-
 .perfume {
-  color: hsl(228deg, 12%, 48%);
+  color: $Dark-grayish-blue;
   letter-spacing: 5px;
   font-size: 12px;
 }
-
 .title {
   font-family: "Fraunces", serif;
   font-weight: 700;
   font-size: 34px;
   line-height: 30px;
 }
-
 .info {
-  color: hsl(228deg, 12%, 48%);
+  color: $Dark-grayish-blue;
   font-size: 15px;
   line-height: 25px;
 }
-
 .precios {
   display: flex;
   align-items: center;
 }
-
 .descuento {
   font-family: "Fraunces", serif;
   font-size: 34px;
-  color: hsl(158deg, 36%, 37%);
+  color: $Dark-cyan;
   padding-right: 30px;
 }
-
 .precio {
-  color: hsl(228deg, 12%, 48%);
+  color: $Dark-grayish-blue;
   text-decoration: line-through;
 }
-
 .button {
-  background-color: hsl(158deg, 36%, 37%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: $Dark-cyan;
+  color: $White;
   border: none;
   border-radius: 10px;
   height: 55px;
@@ -94,7 +82,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
-
 @media (max-width: 670px) {
   .container-card {
     flex-direction: column;
@@ -111,8 +98,7 @@ body {
   .container-image img:nth-child(2) {
     width: 365px;
     height: 100%;
-    -o-object-fit: fill;
-       object-fit: fill;
+    object-fit: fill;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 0px;
   }
@@ -126,4 +112,4 @@ body {
   .info {
     font-size: 15px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
